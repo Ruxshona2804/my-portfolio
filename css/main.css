@@ -1,0 +1,264 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+nav {
+  background-color: violet;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+nav .container {
+  box-shadow: 0 4px 6px rgb(155, 147, 147);
+  border: 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(230, 208, 230);
+  border-radius: 30px 30px 0 0;
+}
+nav .container .nav__me {
+  font-size: 26px;
+}
+nav .container .nav__me span {
+  font-size: 34px;
+  color: violet;
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+nav .container ul li {
+  font-size: 18px;
+}
+nav .container ul li:hover {
+  color: rgb(77, 19, 77);
+  border: solid rgb(77, 19, 77);
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+}
+
+@media (max-width: 678px) {
+  nav {
+    font-weight: 400px;
+  }
+  nav .container {
+    justify-content: space-around;
+    margin: 20px auto 0;
+  }
+  nav .container .nav__me {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
+  nav .container .nav__me span {
+    font-size: 30px;
+  }
+  nav .container ul {
+    gap: 1rem;
+  }
+  nav .container ul li {
+    font-size: 12px;
+  }
+}
+header {
+  background-color: violet;
+  min-height: 100vh;
+}
+header .container {
+  background-color: rgb(230, 208, 230);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  min-height: 90vh;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 2px 6px 10px rgb(155, 147, 147);
+}
+header .container .head__left {
+  width: 50%;
+}
+header .container .head__left h1 {
+  font-size: 54px;
+  text-align: center;
+  color: rgb(77, 19, 77);
+}
+header .container .head__left h2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  width: 220px;
+  margin: 0 auto;
+}
+header .container .head__right {
+  width: 50%;
+}
+header .container .head__right img {
+  width: 400px;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 10px 10px 10px rgb(207, 144, 207);
+}
+
+@media (max-width: 678px) {
+  header .container {
+    flex-direction: column;
+    height: auto;
+  }
+  header .container .head__left {
+    width: 100%;
+  }
+  header .container .head__left h1 {
+    font-size: 40px;
+  }
+  header .container .head__left h2 {
+    font-size: 18px;
+  }
+  header .container .head__right {
+    width: 100%;
+  }
+  header .container .head__right img {
+    border-radius: 20%;
+  }
+}
+section {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+section .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+section .container .main__store h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+section .container .main__store p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  width: 350px;
+}
+section .container .main__photo img {
+  width: 100%;
+  border-radius: 50%;
+  margin-left: -15px;
+  background: violet;
+}
+section .container .main__information h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+section .container .main__information ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+section .container .main__information ul li span {
+  font-weight: bold;
+  color: rgb(139, 57, 139);
+}
+section .container .main__information .inform__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .container .main__information .inform__icons i {
+  font-size: 24px;
+  color: #333;
+}
+section .container .main__information .inform__icons i:hover {
+  color: rgb(139, 57, 139);
+  transform: scale(1.5rem);
+}
+
+@media (max-width: 678px) {
+  section .container {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+}
+.myworks {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.myworks .container {
+  min-height: 100vh;
+}
+.myworks .container h3 {
+  font-size: 46px;
+  text-align: center;
+}
+.myworks .container .work__projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+.myworks .container .work__projects .project {
+  background-color: rgb(236, 192, 236);
+}
+.myworks .container .work__projects .project h4 {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.myworks .container .work__projects .project p {
+  font-size: 16px;
+  text-align: center;
+}
+.myworks .container .work__projects .project p a {
+  display: block;
+  text-decoration: none;
+}
+
+@media (max-width: 678px) {
+  .myworks .container h3 {
+    font-size: 32px;
+  }
+  .myworks .container .work__projects {
+    grid-template-columns: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

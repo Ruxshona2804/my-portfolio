@@ -1,0 +1,49 @@
+.myworks{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    .container{
+        min-height: 100vh;
+        h3{
+            font-size: 46px;
+            text-align: center;
+            
+        }
+        .work__projects{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 2rem;
+            .project{
+              
+                background-color: rgb(236, 192, 236);
+                h4{
+                    font-size: 32px;
+                    text-align: center;
+                    font-family: "Edu AU VIC WA NT Hand", cursive;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:678px) {
+    .myworks{
+        .container{
+            h3{
+                font-size: 32px;
+            }
+            .work__projects{
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
